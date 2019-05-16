@@ -7,6 +7,27 @@ using System.Threading.Tasks;
 namespace Cars {
     class Program {
         static void Main(string[] args) {
+            // Add a driver attribute to the Car -> Driver is of type Passenger
+            // In the Main add a passenger named Anne Clements, I, 1970
+            // add a driver named Dwayne Johnson, M, 1960
+            // Make the car accelerate to 100
+
+            // Print out:
+            //   Car's Make, Model and Speed
+            //   Driver's name, Sex and Age
+            
+
+            Car c1 = new Car(3500, "Nissan", "370Z");
+            c1.Accelerate(5);
+
+            Passenger zali = new Passenger("Zali", 'F', 2003);
+
+            c1.AddPassenger(zali);
+
+
+            Console.WriteLine(c1.Make);
+
+            Console.ReadKey();
         }
     }
 
